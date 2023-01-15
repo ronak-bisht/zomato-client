@@ -28,7 +28,7 @@ export default function Filter(){
  useEffect(()=>{
     const getData=async ()=>{
         // const data=await axios.get(`http://localhost:5000/restaurants`)
-        const data=await axios.get(`/restaurants`)
+        const data=await axios.get(`https://zomato-server.onrender.com/restaurants`)
         
         setRestaurant(data.data.filter((d)=>{
             return d.meal===meal
