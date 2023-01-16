@@ -9,7 +9,7 @@ export default function(){
   const navigate=useNavigate()
     React.useEffect(() => {
         
-       fetch('/logout',{
+       fetch('https://zomato-server.onrender.com/logout',{
         method:'GET',
         headers:{
             Accept:"application/json",

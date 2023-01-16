@@ -41,7 +41,7 @@ export default function Detail(){
 useEffect(()=>{
     const getData=async ()=>{
         // const data=await axios.get(`http://localhost:5000/restaurants`)
-        const data=await axios.get(`/restaurants`)
+        const data=await axios.get(`https://zomato-server.onrender.com/restaurants`)
        
          const obj=data.data.find((res)=>{
          return res.id==id
@@ -55,7 +55,7 @@ useEffect(()=>{
    useEffect(()=>{
     const auth=async ()=>{
         try{
-            const res=await fetch('/payment',{
+            const res=await fetch('https://zomato-server.onrender.com/payment',{
                 method:'GET',
                 headers:{
                     Accept:"application/json",
@@ -86,7 +86,7 @@ useEffect(()=>{
 
    const handleModel=async ()=>{
     try{
-        const res=await fetch('/payment',{
+        const res=await fetch('https://zomato-server.onrender.com/payment',{
             method:'GET',
             headers:{
                 Accept:"application/json",

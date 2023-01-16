@@ -29,7 +29,7 @@ export default function Login(props){
     
     async function register(){
         const {name,email,password}=user
-        const res=await fetch('/register',{
+        const res=await fetch('https://zomato-server.onrender.com/register',{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
@@ -56,7 +56,7 @@ export default function Login(props){
   async function login(e){
     const {email,password}=user
     e.preventDefault();
-    const res=await fetch('/signin',{
+    const res=await fetch('https://zomato-server.onrender.com/signin',{
         method:"POST",
         headers:{
             "Content-type":"application/json"

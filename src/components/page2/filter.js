@@ -40,7 +40,7 @@ export default function Filter(){
  useEffect(()=>{
     const auth=async ()=>{
         try{
-            const res=await fetch('/payment',{
+            const res=await fetch('https://zomato-server.onrender.com/payment',{
                 method:'GET',
                 headers:{
                     Accept:"application/json",
@@ -71,7 +71,7 @@ export default function Filter(){
 const handleSearch=()=>{
     const getData=async ()=>{
 
-        const data=await axios.get(`http://localhost:5000/restaurants?q=${inputName}
+        const data=await axios.get(`https://zomato-server.onrender.com/restaurants?q=${inputName}
         `)
        
         setRestaurant(data.data)
