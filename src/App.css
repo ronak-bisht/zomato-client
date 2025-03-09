@@ -302,7 +302,7 @@
  /*----------------- food order section -------------------- */
  .food-list-container{
   
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
@@ -352,7 +352,7 @@
  .user-info{
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: rgba(34, 32, 32, 0.7);
@@ -396,10 +396,11 @@ line-height: 40px;
  .payment-container{
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: rgba(34, 32, 32, 0.7);
+ 
   display: flex;
   justify-content: center;
   align-items: center;
